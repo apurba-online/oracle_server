@@ -8,7 +8,12 @@ const dbConfig = {
 };
 
 async function getConnection() {
-  return await oracledb.getConnection(dbConfig);
+  try {
+    return await oracledb.getConnection(dbConfig);
+  } catch (err) {
+    console.error("Database connection error:", err);
+    throw new Error("Failed to connect to OracleDB.");
+  }
 }
 
 module.exports = getConnection;
