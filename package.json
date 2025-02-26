@@ -1,0 +1,22 @@
+{
+  "name": "node-oracle-api",
+  "version": "1.0.0",
+  "description": "A Node.js API with OracleDB deployed on Vercel",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "oracledb": "^6.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
